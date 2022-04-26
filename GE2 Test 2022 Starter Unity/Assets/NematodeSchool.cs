@@ -24,8 +24,8 @@ public class NematodeSchool : MonoBehaviour
             Limit = Nematode.gameObject.transform.GetChild(0).gameObject.AddComponent<Constrain>();
             Limit.center = transform.position;
             Limit.radius = radius;
+            Nematode.gameObject.transform.GetChild(0).gameObject.GetComponent<NoiseWander>().weight = (float)Nematode.transform.childCount;
         }
-
     }
 
     // Update is called once per frame

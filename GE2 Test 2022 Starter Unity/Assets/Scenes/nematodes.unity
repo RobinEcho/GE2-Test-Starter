@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 2637107432639423391, guid: 49f12583948911544aa826ea0391d389, type: 3}
-  radius: 20
+  radius: 50
   count: 5
 --- !u!4 &1024887883
 Transform:
