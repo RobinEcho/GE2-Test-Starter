@@ -19,4 +19,9 @@ public abstract class SteeringBehaviour:MonoBehaviour
     }
 
     public abstract Vector3 Calculate();
+
+    public void ChangeSpeed(float maxspeed)
+    {
+        boid.maxSpeed = maxspeed;
+    }
 }

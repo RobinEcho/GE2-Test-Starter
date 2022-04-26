@@ -19,9 +19,10 @@ public class Constrain: SteeringBehaviour
         }
     }
 
+
     public void Start()
     {
-            center = transform.position;
+            //center = transform.position;
     }
 
     public override Vector3 Calculate()

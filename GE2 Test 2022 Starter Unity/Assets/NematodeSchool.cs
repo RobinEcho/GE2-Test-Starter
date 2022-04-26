@@ -11,10 +11,21 @@ public class NematodeSchool : MonoBehaviour
     
     public int count = 10;
 
+
+    Constrain Limit;
+    GameObject Nematode;
+
     // Start is called before the first frame update
     void Awake()
     {
-        // Put your code here
+        for(int i = 0; i < count; i++)
+        {
+            Nematode = Instantiate(prefab);
+            Limit = Nematode.gameObject.transform.GetChild(0).gameObject.AddComponent<Constrain>();
+            Limit.center = transform.position;
+            Limit.radius = radius;
+        }
+
     }
 
     // Update is called once per frame
